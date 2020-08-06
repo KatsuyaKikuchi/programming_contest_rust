@@ -10,5 +10,14 @@ edition = "2018"
 proconio = "0.4.1"
 
 [[bin]]
-name = "C"
-path = "src/AtCoder Beginner Contest/ABC127/d.rs"
+name = "a"
+path = "src/AtCoder Beginner Contest/ABC125/a.rs"
+[[bin]]
+name = "b"
+path = "src/AtCoder Beginner Contest/ABC125/b.rs"
+[[bin]]
+name = "c"
+path = "src/AtCoder Beginner Contest/ABC125/c.rs"
+[[bin]]
+name = "d"
+path = "src/AtCoder Beginner Contest/ABC125/d.rs"
