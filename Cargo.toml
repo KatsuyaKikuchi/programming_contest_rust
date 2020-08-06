@@ -7,3 +7,8 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+proconio = "0.4.1"
+
+[[bin]]
+name = "C"
+path = "src/AtCoder Beginner Contest/ABC127/d.rs"
