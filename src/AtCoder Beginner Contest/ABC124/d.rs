@@ -1,6 +1,7 @@
 use proconio::input;
 use proconio::marker::Chars;
 use std::cmp::max;
+use std::collections::VecDeque;
 
 fn main()
 {
@@ -11,28 +12,27 @@ fn main()
     }
 
     let mut ans = 0;
-    let mut last = 0;
+    let mut q: VecDeque<char> = VecDeque::new();
     let mut index = 0;
     while index < n {
-        if s[index as usize] == '0'
-        {
-            k -= 1;
-            while index + 1 < n && s[index as usize] == '0' {
-                index += 1;
-            }
-
-            if k < 0 {
-                loop {
-                    last += 1;
-                    if s[last as usize] == '1' && s[(last - 1) as usize] == '0' {
-                        break;
-                    }
-                }
-                k += 1;
-            }
+        let c = s[index as usize];
+        while index < n && c == s[index as usize] {
+            q.push_back(c);
+            index += 1;
         }
-        ans = max(ans, index - last + 1);
-        index += 1;
+        if c == '0' {
+            k -= 1;
+        }
+        if k < 0 {
+            while *q.front().unwrap() == '1' {
+                q.pop_front();
+            }
+            while *q.front().unwrap() == '0' {
+                q.pop_front();
+            }
+            k += 1;
+        }
+        ans = max(ans, q.len() as i32);
     }
 
     println!("{}", ans);

@@ -11,13 +11,13 @@ proconio = "0.4.1"
 
 [[bin]]
 name = "a"
-path = "src/AtCoder Beginner Contest/ABC124/a.rs"
+path = "src/AtCoder Beginner Contest/ABC123/a.rs"
 [[bin]]
 name = "b"
-path = "src/AtCoder Beginner Contest/ABC124/b.rs"
+path = "src/AtCoder Beginner Contest/ABC123/b.rs"
 [[bin]]
 name = "c"
-path = "src/AtCoder Beginner Contest/ABC124/c.rs"
+path = "src/AtCoder Beginner Contest/ABC123/c.rs"
 [[bin]]
 name = "d"
-path = "src/AtCoder Beginner Contest/ABC124/d.rs"
+path = "src/AtCoder Beginner Contest/ABC123/d.rs"
