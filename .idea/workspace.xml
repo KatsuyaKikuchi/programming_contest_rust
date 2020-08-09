@@ -13,10 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC125/a.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC125/b.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC125/c.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC125/d.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC124/a.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC124/b.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC124/c.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC124/d.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
@@ -135,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596632091977</updated>
-      <workItem from="1596632093542" duration="7403000" />
+      <workItem from="1596632093542" duration="12691000" />
     </task>
     <task id="LOCAL-00001" summary="solve ABC127">
       <created>1596724187946</created>
@@ -144,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596724187946</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="solve ABC125">
+      <created>1596727537942</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596727537942</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,17 +159,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="solve ABC127" />
-    <option name="LAST_COMMIT_MESSAGE" value="solve ABC127" />
+    <MESSAGE value="solve ABC125" />
+    <option name="LAST_COMMIT_MESSAGE" value="solve ABC125" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596634011982">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1596634011982" />
-    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1596724187762">
+    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1596727537754">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596724187762" />
+    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596727537754" />
     <state x="144" y="78" key="DiffContextDialog" timestamp="1596724175620">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -179,42 +187,42 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596632130026" />
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom" timestamp="1596727475716">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1596957504729">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596727475716" />
-    <state width="1398" height="304" key="GridCell.Tab.0.center" timestamp="1596727475714">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596957504729" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1596957504728">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596727475714" />
-    <state width="1398" height="304" key="GridCell.Tab.0.left" timestamp="1596727475714">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596957504728" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1596957504727">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596727475714" />
-    <state width="1398" height="304" key="GridCell.Tab.0.right" timestamp="1596727475715">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596957504727" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1596957504728">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596727475715" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1596727478086">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596957504728" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1596727510121">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596727478086" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1596727478084">
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596727510121" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1596727510119">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1596727478084" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1596727478084">
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1596727510119" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1596727510119">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1596727478084" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1596727478085">
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1596727510119" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1596727510120">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1596727478085" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1596724190956">
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1596727510120" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1596727540178">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596724190956" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596727540178" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
