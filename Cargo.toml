@@ -11,25 +11,13 @@ proconio = "0.4.1"
 
 [[bin]]
 name = "a"
-path = "src/AizuOnlineJudge/ITP1/5_A.rs"
+path = "src/AizuOnlineJudge/ITP1/7_A.rs"
 [[bin]]
 name = "b"
-path = "src/AizuOnlineJudge/ITP1/5_B.rs"
+path = "src/AizuOnlineJudge/ITP1/7_B.rs"
 [[bin]]
 name = "c"
-path = "src/AizuOnlineJudge/ITP1/5_C.rs"
+path = "src/AizuOnlineJudge/ITP1/7_C.rs"
 [[bin]]
 name = "d"
-path = "src/AizuOnlineJudge/ITP1/5_D.rs"
-[[bin]]
-name = "aa"
-path = "src/AizuOnlineJudge/ITP1/6_A.rs"
-[[bin]]
-name = "bb"
-path = "src/AizuOnlineJudge/ITP1/6_B.rs"
-[[bin]]
-name = "cc"
-path = "src/AizuOnlineJudge/ITP1/6_C.rs"
-[[bin]]
-name = "dd"
-path = "src/AizuOnlineJudge/ITP1/6_D.rs"
+path = "src/AizuOnlineJudge/ITP1/7_D.rs"

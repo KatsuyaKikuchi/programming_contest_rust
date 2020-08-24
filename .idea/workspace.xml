@@ -13,14 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/5_A.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/5_B.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/5_C.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/5_D.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/6_A.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/6_B.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/6_C.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/6_D.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/7_A.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/7_B.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/7_C.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/7_D.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
@@ -57,10 +53,10 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo Command.Run dd">
-    <configuration name="Run aa" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager" selected="Cargo Command.Run d">
+    <configuration name="Run a" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package programming_contest_rust --bin aa" />
+      <option name="command" value="run --package programming_contest_rust --bin a" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -70,9 +66,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run bb" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Run b" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package programming_contest_rust --bin bb" />
+      <option name="command" value="run --package programming_contest_rust --bin b" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -82,9 +78,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run cc" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Run c" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package programming_contest_rust --bin cc" />
+      <option name="command" value="run --package programming_contest_rust --bin c" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -120,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo Command.Run dd" />
-        <item itemvalue="Cargo Command.Run cc" />
-        <item itemvalue="Cargo Command.Run bb" />
-        <item itemvalue="Cargo Command.Run aa" />
         <item itemvalue="Cargo Command.Run d" />
+        <item itemvalue="Cargo Command.Run c" />
+        <item itemvalue="Cargo Command.Run b" />
+        <item itemvalue="Cargo Command.Run a" />
+        <item itemvalue="Cargo Command.Run dd" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +141,7 @@
       <workItem from="1596632093542" duration="14044000" />
       <workItem from="1597477012302" duration="2793000" />
       <workItem from="1598012494459" duration="3853000" />
-      <workItem from="1598107748742" duration="7503000" />
+      <workItem from="1598107748742" duration="10852000" />
     </task>
     <task id="LOCAL-00001" summary="solve ABC127">
       <created>1596724187946</created>
@@ -182,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598023705951</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="solve AOJ ITP1">
+      <created>1598194039941</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598194039941</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,10 +204,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1596634011982" />
-    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1598023705733">
+    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1598194039753">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1598023705733" />
+    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1598194039753" />
     <state x="144" y="78" key="DiffContextDialog" timestamp="1596724175620">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -221,22 +224,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596632130026" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1598190646148">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1598273811913">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598190646148" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1598190646147">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598273811913" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1598273811912">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1598190646147" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1598190646146">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1598273811912" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1598273811911">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1598190646146" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1598190646147">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1598273811911" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1598273811912">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1598190646147" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1598273811912" />
     <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1598109499666">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -253,10 +256,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1598109499665" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1598023707991">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1598194042929">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1598023707991" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1598194042929" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
