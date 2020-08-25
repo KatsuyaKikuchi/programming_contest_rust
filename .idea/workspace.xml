@@ -13,10 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/7_A.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/7_B.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/7_C.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/7_D.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/8_A.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/8_B.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/8_C.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AizuOnlineJudge/ITP1/8_D.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
@@ -141,7 +141,7 @@
       <workItem from="1596632093542" duration="14044000" />
       <workItem from="1597477012302" duration="2793000" />
       <workItem from="1598012494459" duration="3853000" />
-      <workItem from="1598107748742" duration="10852000" />
+      <workItem from="1598107748742" duration="13872000" />
     </task>
     <task id="LOCAL-00001" summary="solve ABC127">
       <created>1596724187946</created>
@@ -185,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598194039941</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="solve AOJ ITP1">
+      <created>1598274177295</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1598274177295</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,10 +211,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1596634011982" />
-    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1598194039753">
+    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1598274177105">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1598194039753" />
+    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1598274177105" />
     <state x="144" y="78" key="DiffContextDialog" timestamp="1596724175620">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -224,22 +231,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596632130026" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1598273811913">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1598358863961">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598273811913" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1598273811912">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598358863961" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1598358863960">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1598273811912" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1598273811911">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1598358863960" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1598358863960">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1598273811911" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1598273811912">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1598358863960" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1598358863961">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1598273811912" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1598358863961" />
     <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1598109499666">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -256,10 +263,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1598109499665" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1598194042929">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1598274178608">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1598194042929" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1598274178608" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
