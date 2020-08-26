@@ -7,17 +7,21 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-proconio = "0.4.1"
+proconio = {version = "0.4.1", features = ["derive"] }
+
 
 [[bin]]
-name = "a"
-path = "src/AizuOnlineJudge/ITP1/9_A.rs"
+name = "a1"
+path = "src/AtCoder Typical Contest/ATC001/A.rs"
 [[bin]]
-name = "b"
-path = "src/AizuOnlineJudge/ITP1/9_B.rs"
+name = "b1"
+path = "src/AtCoder Typical Contest/ATC001/B.rs"
 [[bin]]
-name = "c"
-path = "src/AizuOnlineJudge/ITP1/9_C.rs"
+name = "a2"
+path = "src/AtCoder Typical Contest/ATC002/A.rs"
 [[bin]]
-name = "d"
-path = "src/AizuOnlineJudge/ITP1/9_D.rs"
+name = "b2"
+path = "src/AtCoder Typical Contest/ATC002/B.rs"
+[[bin]]
+name = "c2"
+path = "src/AtCoder Typical Contest/ATC001/C.rs"
