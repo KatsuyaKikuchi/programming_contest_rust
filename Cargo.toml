@@ -9,19 +9,21 @@ edition = "2018"
 [dependencies]
 proconio = {version = "0.4.1", features = ["derive"] }
 
-
 [[bin]]
-name = "a1"
-path = "src/AtCoder Typical Contest/ATC001/A.rs"
+name = "a"
+path = "src/AtCoder Beginner Contest/ABC126/A.rs"
 [[bin]]
-name = "b1"
-path = "src/AtCoder Typical Contest/ATC001/B.rs"
+name = "b"
+path = "src/AtCoder Beginner Contest/ABC126/B.rs"
 [[bin]]
-name = "a2"
-path = "src/AtCoder Typical Contest/ATC002/A.rs"
+name = "c"
+path = "src/AtCoder Beginner Contest/ABC126/C.rs"
 [[bin]]
-name = "b2"
-path = "src/AtCoder Typical Contest/ATC002/B.rs"
+name = "d"
+path = "src/AtCoder Beginner Contest/ABC126/D.rs"
 [[bin]]
-name = "c2"
-path = "src/AtCoder Typical Contest/ATC001/C.rs"
+name = "e"
+path = "src/AtCoder Beginner Contest/ABC126/E.rs"
+[[bin]]
+name = "f"
+path = "src/AtCoder Beginner Contest/ABC126/F.rs"
