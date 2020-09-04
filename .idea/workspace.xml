@@ -13,8 +13,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC126/F.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/NextPermutation.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/A.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/B.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/C.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/D.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/E.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/F.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +56,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo Command.Run f">
+  <component name="RunManager" selected="Cargo Command.Run d">
     <configuration name="Run b" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package programming_contest_rust --bin b" />
@@ -112,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo Command.Run d" />
+        <item itemvalue="Cargo Command.Run b" />
         <item itemvalue="Cargo Command.Run f" />
         <item itemvalue="Cargo Command.Run e" />
-        <item itemvalue="Cargo Command.Run d" />
         <item itemvalue="Cargo Command.Run c" />
-        <item itemvalue="Cargo Command.Run b" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +144,9 @@
       <workItem from="1596632093542" duration="14044000" />
       <workItem from="1597477012302" duration="2793000" />
       <workItem from="1598012494459" duration="3853000" />
-      <workItem from="1598107748742" duration="31393000" />
+      <workItem from="1598107748742" duration="32109000" />
+      <workItem from="1598795622887" duration="1361000" />
+      <workItem from="1599141588471" duration="10412000" />
     </task>
     <task id="LOCAL-00001" summary="solve ABC127">
       <created>1596724187946</created>
@@ -223,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598540177492</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="solve ABC126">
+      <created>1598544708976</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1598544708976</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,17 +254,18 @@
     <MESSAGE value="solve ATC and add union_find lib" />
     <MESSAGE value="solve ATC" />
     <MESSAGE value="solve ABC126 and add rooted tree lib" />
-    <option name="LAST_COMMIT_MESSAGE" value="solve ABC126 and add rooted tree lib" />
+    <MESSAGE value="solve ABC126" />
+    <option name="LAST_COMMIT_MESSAGE" value="solve ABC126" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596634011982">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1596634011982" />
-    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1598540177260">
+    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1598544708782">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1598540177260" />
+    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1598544708782" />
     <state x="144" y="78" key="DiffContextDialog" timestamp="1596724175620">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -265,42 +282,42 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596632130026" />
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom" timestamp="1598544525490">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1599240583860">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598544525490" />
-    <state width="1398" height="304" key="GridCell.Tab.0.center" timestamp="1598544525489">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599240583860" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1599240583859">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1598544525489" />
-    <state width="1398" height="304" key="GridCell.Tab.0.left" timestamp="1598544525488">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1599240583859" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1599240583858">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1598544525488" />
-    <state width="1398" height="304" key="GridCell.Tab.0.right" timestamp="1598544525489">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1599240583858" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1599240583860">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1598544525489" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1598544527834">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1599240583860" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1599142984465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1598544527834" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1598544527833">
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599142984465" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1599142984464">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1598544527833" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1598544527832">
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1599142984464" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1599142984464">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1598544527832" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1598544527833">
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1599142984464" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1599142984465">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1598544527833" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1598540179312">
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1599142984465" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1598544710804">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1598540179312" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1598544710804" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -324,11 +341,6 @@
           <url>file://$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC124/d.rs</url>
           <line>17</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC126/F.rs</url>
-          <line>11</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -10,20 +10,11 @@ edition = "2018"
 proconio = {version = "0.4.1", features = ["derive"] }
 
 [[bin]]
-name = "a"
-path = "src/AtCoder Beginner Contest/ABC126/A.rs"
+name = "f"
+path = "src/VirtualContest/20200830/F.rs"
 [[bin]]
 name = "b"
-path = "src/AtCoder Beginner Contest/ABC126/B.rs"
-[[bin]]
-name = "c"
-path = "src/AtCoder Beginner Contest/ABC126/C.rs"
+path = "src/VirtualContest/20200830/B.rs"
 [[bin]]
 name = "d"
-path = "src/AtCoder Beginner Contest/ABC126/D.rs"
-[[bin]]
-name = "e"
-path = "src/AtCoder Beginner Contest/ABC126/E.rs"
-[[bin]]
-name = "f"
-path = "src/AtCoder Beginner Contest/ABC126/F.rs"
+path = "src/VirtualContest/20200830/D.rs"
