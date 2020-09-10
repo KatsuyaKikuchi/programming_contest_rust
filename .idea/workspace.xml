@@ -13,9 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/N.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/O.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/P.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/Q.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/R.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/S.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
@@ -52,43 +52,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo Command.Run p">
-    <configuration name="Run l" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package programming_contest_rust --bin l" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run m" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package programming_contest_rust --bin m" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run n" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package programming_contest_rust --bin n" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo Command.Run s">
     <configuration name="Run o" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package programming_contest_rust --bin o" />
@@ -113,13 +77,49 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Run q" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package programming_contest_rust --bin q" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run r" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package programming_contest_rust --bin r" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run s" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package programming_contest_rust --bin s" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo Command.Run s" />
+        <item itemvalue="Cargo Command.Run r" />
+        <item itemvalue="Cargo Command.Run q" />
         <item itemvalue="Cargo Command.Run p" />
         <item itemvalue="Cargo Command.Run o" />
-        <item itemvalue="Cargo Command.Run n" />
-        <item itemvalue="Cargo Command.Run m" />
-        <item itemvalue="Cargo Command.Run l" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +147,7 @@
       <workItem from="1599393596202" duration="2314000" />
       <workItem from="1599401205347" duration="931000" />
       <workItem from="1599484148092" duration="5749000" />
-      <workItem from="1599659038240" duration="2664000" />
+      <workItem from="1599659038240" duration="5223000" />
     </task>
     <task id="LOCAL-00001" summary="solve ABC127">
       <created>1596724187946</created>
@@ -268,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599485777457</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="solve virtual">
+      <created>1599662967071</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599662967072</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,10 +300,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="124" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1599375184951" />
-    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1599485777271">
+    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1599662966840">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1599485777271" />
+    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1599662966840" />
     <state x="144" y="78" key="DiffContextDialog" timestamp="1596724175620">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -313,22 +320,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596632130026" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1599662099838">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1599750617813">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599662099838" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1599662099837">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599750617813" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1599750617813">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1599662099837" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1599662099836">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1599750617813" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1599750617812">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1599662099836" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1599662099838">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1599750617812" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1599750617813">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1599662099838" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1599750617813" />
     <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1599574892538">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -345,10 +352,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1599574892538" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1599485779072">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1599662969314">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1599485779072" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1599662969314" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
