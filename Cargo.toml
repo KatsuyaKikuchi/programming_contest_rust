@@ -10,11 +10,11 @@ edition = "2018"
 proconio = {version = "0.4.1", features = ["derive"] }
 
 [[bin]]
-name = "q"
-path = "src/VirtualContest/20200830/Q.rs"
+name = "t"
+path = "src/VirtualContest/20200830/T.rs"
 [[bin]]
-name = "r"
-path = "src/VirtualContest/20200830/R.rs"
+name = "u"
+path = "src/VirtualContest/20200830/U.rs"
 [[bin]]
-name = "s"
-path = "src/VirtualContest/20200830/S.rs"
+name = "v"
+path = "src/VirtualContest/20200830/V.rs"
