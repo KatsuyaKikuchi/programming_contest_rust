@@ -13,12 +13,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/W.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/X.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/Y.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/Z.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/A.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/001.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/B.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/002.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/C.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/003.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/D.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/004.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/E.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/005.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/F.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/006.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/G.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/007.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/H.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/008.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/I.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/009.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/J.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/010.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/K.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/011.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/L.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/012.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/M.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/013.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/N.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/014.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/O.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/015.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/P.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/016.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/Q.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/017.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/R.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/018.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/S.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/019.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/T.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/020.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/U.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/021.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/V.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/022.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/W.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/023.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/X.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/024.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/Y.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/025.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/Z.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/026.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +75,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo Command.Run z">
+  <component name="RunManager" selected="Cargo Command.Run w">
     <configuration name="Run v" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package programming_contest_rust --bin v" />
@@ -116,10 +138,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo Command.Run w" />
         <item itemvalue="Cargo Command.Run z" />
         <item itemvalue="Cargo Command.Run y" />
         <item itemvalue="Cargo Command.Run x" />
-        <item itemvalue="Cargo Command.Run w" />
         <item itemvalue="Cargo Command.Run v" />
       </list>
     </recent_temporary>
@@ -148,7 +170,7 @@
       <workItem from="1599393596202" duration="2314000" />
       <workItem from="1599401205347" duration="931000" />
       <workItem from="1599484148092" duration="5749000" />
-      <workItem from="1599659038240" duration="13501000" />
+      <workItem from="1599659038240" duration="13763000" />
     </task>
     <task id="LOCAL-00001" summary="solve ABC127">
       <created>1596724187946</created>
@@ -290,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599838321342</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="solve virtual">
+      <created>1599914229395</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1599914229396</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,10 +344,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="124" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1599375184951" />
-    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1599838321132">
+    <state x="268" y="25" key="CommitChangelistDialog2" timestamp="1599914229173">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1599838321132" />
+    <state x="268" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1599914229173" />
     <state x="144" y="78" key="DiffContextDialog" timestamp="1596724175620">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -335,22 +364,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596632130026" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1599914163733">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1599914287022">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599914163733" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1599914163733">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599914287022" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1599914287021">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1599914163733" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1599914163732">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1599914287021" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1599914287020">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1599914163732" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1599914163733">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1599914287020" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1599914287021">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1599914163733" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1599914287021" />
     <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1599900552939">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -367,10 +396,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1599900552939" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1599838324153">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1599914231700">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1599838324153" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1599914231700" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -396,27 +425,27 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/VirtualContest/20200830/J.rs</url>
+          <url>file://$PROJECT_DIR$/src/VirtualContest/20200830/010.rs</url>
           <line>84</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/VirtualContest/20200830/K.rs</url>
+          <url>file://$PROJECT_DIR$/src/VirtualContest/20200830/011.rs</url>
           <line>38</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/VirtualContest/20200830/U.rs</url>
+          <url>file://$PROJECT_DIR$/src/VirtualContest/20200830/021.rs</url>
           <line>7</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/VirtualContest/20200830/V.rs</url>
+          <url>file://$PROJECT_DIR$/src/VirtualContest/20200830/022.rs</url>
           <line>80</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/VirtualContest/20200830/X.rs</url>
+          <url>file://$PROJECT_DIR$/src/VirtualContest/20200830/024.rs</url>
           <line>23</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
