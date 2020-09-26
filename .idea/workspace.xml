@@ -12,14 +12,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/031.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/032.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/033.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/034.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/035.rs" afterDir="false" />
+    <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="solve problem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/RootedTree.rs" beforeDir="false" afterPath="$PROJECT_DIR$/lib/RootedTree.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/20200830/034.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/20200830/034.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo Command.Run c">
+  <component name="RunManager" selected="Cargo Command.Run d">
     <configuration name="Run a" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package programming_contest_rust --bin a" />
@@ -117,10 +113,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo Command.Run d" />
         <item itemvalue="Cargo Command.Run c" />
         <item itemvalue="Cargo Command.Run b" />
         <item itemvalue="Cargo Command.Run a" />
-        <item itemvalue="Cargo Command.Run d" />
         <item itemvalue="Cargo Command.Run w" />
       </list>
     </recent_temporary>
@@ -154,7 +150,7 @@
       <workItem from="1600091296990" duration="9000" />
       <workItem from="1600091383677" duration="15000" />
       <workItem from="1600868513004" duration="5875000" />
-      <workItem from="1601049759632" duration="2760000" />
+      <workItem from="1601049759632" duration="5207000" />
     </task>
     <task id="LOCAL-00001" summary="solve ABC127">
       <created>1596724187946</created>
@@ -324,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600953833992</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="solve problem">
+      <created>1601105935701</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1601105935701</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,14 +354,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="124" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1599375184951" />
-    <state x="266" y="51" key="CommitChangelistDialog2" timestamp="1600953833763">
+    <state x="266" y="51" key="CommitChangelistDialog2" timestamp="1601105961775">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="266" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1600953833763" />
-    <state x="144" y="78" key="DiffContextDialog" timestamp="1596724175620">
+    <state x="266" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601105961775" />
+    <state x="144" y="78" key="DiffContextDialog" timestamp="1601106231501">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="144" y="78" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1596724175620" />
+    <state x="144" y="78" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1601106231501" />
     <state x="574" y="182" key="EnvironmentVariablesDialog" timestamp="1596633973959">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -371,22 +374,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596632130026" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1601105792065">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1601109518053">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601105792065" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1601105792064">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601109518053" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1601109518052">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601105792064" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1601105792063">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601109518052" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1601109518052">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601105792063" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1601105792064">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601109518052" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1601109518053">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601105792064" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601109518053" />
     <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1600957306660">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -403,10 +406,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1600957306660" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1600953835813">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1601106247628">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1600953835813" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601106247628" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601107655611">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1601107655611" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
