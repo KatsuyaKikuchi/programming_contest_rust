@@ -11,13 +11,16 @@ proconio = {version = "0.4.1", features = ["derive"] }
 
 [[bin]]
 name = "a"
-path = "src/VirtualContest/20200830/027.rs"
+path = "src/VirtualContest/20200830/031.rs"
 [[bin]]
 name = "b"
-path = "src/VirtualContest/20200830/028.rs"
+path = "src/VirtualContest/20200830/032.rs"
 [[bin]]
 name = "c"
-path = "src/VirtualContest/20200830/029.rs"
+path = "src/VirtualContest/20200830/033.rs"
 [[bin]]
 name = "d"
-path = "src/VirtualContest/20200830/030.rs"
+path = "src/VirtualContest/20200830/034.rs"
+[[bin]]
+name = "e"
+path = "src/VirtualContest/20200830/035.rs"
