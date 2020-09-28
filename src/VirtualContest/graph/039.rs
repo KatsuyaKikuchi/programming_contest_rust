@@ -1,4 +1,7 @@
-use std::collections::VecDeque;
+use proconio::input;
+use proconio::marker::Usize1;
+use std::collections::{VecDeque, BinaryHeap};
+use std::cmp::max;
 
 struct Node {
     edge: Vec<(usize, i64)>,
@@ -109,4 +112,48 @@ impl RootedTree {
         let p = self.lca(a, b);
         self.node[a].depth + self.node[b].depth - 2 * (self.node[p].depth)
     }
+}
+
+fn main()
+{
+    input! {
+    n:usize,
+    parent:[Usize1;n-1],
+    }
+
+    let mut tree = RootedTree::new(n, 0);
+    for (i, &p) in parent.iter().enumerate() {
+        tree.add_edge(i + 1, p, 1);
+    }
+    tree.build();
+
+    let mut depth = vec![0; n];
+    let mut used = vec![false; n];
+    let mut q = BinaryHeap::new();
+    for (idx, depth) in tree.node.iter().enumerate()
+        .filter(|(_, n)| n.edge.len() == 0).map(|(i, n)| (i, n.depth)) {
+        q.push((depth, idx));
+        used[idx] = true;
+    }
+
+    while let Some((_, idx)) = q.pop() {
+        let mut v = Vec::new();
+        for &(child, _) in tree.node[idx].edge.iter() {
+            v.push(depth[child]);
+        }
+        v.sort();
+        v.reverse();
+        for (i, &value) in v.iter().enumerate() {
+            depth[idx] = max(depth[idx], i + 1 + value);
+        }
+
+        let p = tree.node[idx].parent;
+        if used[p] {
+            continue;
+        }
+        used[p] = true;
+        q.push((tree.node[p].depth, p));
+    }
+
+    println!("{}", depth[0]);
 }
