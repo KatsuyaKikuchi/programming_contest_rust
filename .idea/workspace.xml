@@ -13,13 +13,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/036.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/037.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/038.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/039.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/040.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/040-2.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/041.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/042.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/RootedTree.rs" beforeDir="false" afterPath="$PROJECT_DIR$/lib/RootedTree.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo Command.Run e">
+  <component name="RunManager" selected="Cargo Command.Run a">
     <configuration name="Run a" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package programming_contest_rust --bin a" />
@@ -117,9 +115,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo Command.Run a" />
         <item itemvalue="Cargo Command.Run e" />
         <item itemvalue="Cargo Command.Run d" />
-        <item itemvalue="Cargo Command.Run a" />
         <item itemvalue="Cargo Command.Run b" />
         <item itemvalue="Cargo Command.Run c" />
       </list>
@@ -158,7 +156,8 @@
       <workItem from="1601130981284" duration="3719000" />
       <workItem from="1601217821140" duration="82000" />
       <workItem from="1601295743153" duration="224000" />
-      <workItem from="1601297536139" duration="3392000" />
+      <workItem from="1601297536139" duration="3989000" />
+      <workItem from="1601991879179" duration="958000" />
     </task>
     <task id="LOCAL-00001" summary="solve ABC127">
       <created>1596724187946</created>
@@ -356,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601217880640</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="solve problems">
+      <created>1601301360921</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1601301360921</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,17 +384,18 @@
     <MESSAGE value="solve problem and add lca method" />
     <MESSAGE value="solve problem" />
     <MESSAGE value="rename folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename folder" />
+    <MESSAGE value="solve problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="solve problems" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="124" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599375184951">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="124" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1599375184951" />
-    <state x="266" y="51" key="CommitChangelistDialog2" timestamp="1601217880455">
+    <state x="266" y="51" key="CommitChangelistDialog2" timestamp="1601301360680">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="266" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601217880455" />
+    <state x="266" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601301360680" />
     <state x="144" y="78" key="DiffContextDialog" timestamp="1601106231501">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -405,22 +412,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596632130026" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1601301269076">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1601475665812">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601301269076" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1601301269074">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601475665812" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1601475665811">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601301269074" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1601301269073">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601475665811" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1601475665811">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601301269073" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1601301269075">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601475665811" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1601475665811">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601301269075" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601475665811" />
     <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1600957306660">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -437,10 +444,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1600957306660" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1601217882189">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1601301364391">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601217882189" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601301364391" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601107655611">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
