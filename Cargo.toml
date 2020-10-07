@@ -18,10 +18,10 @@ name = "b"
 path = "src/VirtualContest/graph/042.rs"
 [[bin]]
 name = "c"
-path = "src/VirtualContest/graph/038.rs"
+path = "src/VirtualContest/graph/043.rs"
 [[bin]]
 name = "d"
-path = "src/VirtualContest/graph/039.rs"
+path = "src/VirtualContest/graph/044.rs"
 [[bin]]
 name = "e"
-path = "src/VirtualContest/graph/040-2.rs"
+path = "src/VirtualContest/graph/045.rs"
