@@ -12,16 +12,16 @@ ordered-float = "2.0.0"
 
 [[bin]]
 name = "a"
-path = "src/VirtualContest/graph/041.rs"
+path = "src/VirtualContest/graph/046.rs"
 [[bin]]
 name = "b"
-path = "src/VirtualContest/graph/042.rs"
+path = "src/VirtualContest/graph/047.rs"
 [[bin]]
 name = "c"
-path = "src/VirtualContest/graph/043.rs"
+path = "src/VirtualContest/graph/048.rs"
 [[bin]]
 name = "d"
-path = "src/VirtualContest/graph/044.rs"
+path = "src/VirtualContest/graph/049.rs"
 [[bin]]
 name = "e"
-path = "src/VirtualContest/graph/045.rs"
+path = "src/VirtualContest/graph/050.rs"

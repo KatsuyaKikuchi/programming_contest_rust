@@ -1,3 +1,7 @@
+use proconio::input;
+use std::collections::BinaryHeap;
+use std::cmp::Reverse;
+
 struct UnionFind {
     parent: Vec<usize>,
     rank: Vec<i32>,
@@ -64,4 +68,52 @@ impl UnionFind {
             .filter(|x| !x.is_empty())
             .collect()
     }
+}
+
+fn main()
+{
+    input! {
+    (n,m):(usize,usize),
+    a:[i64;n],
+    edge:[(usize,usize);m],
+    }
+
+    let mut uf = UnionFind::new(n);
+    for (a, b) in edge {
+        uf.unit(a, b);
+    }
+
+    let groups = uf.groups();
+    let mut count = (groups.len() as i32 - 1) * 2;
+    if count > n as i32 {
+        println!("Impossible");
+        return;
+    }
+
+    let mut ans = 0;
+    let mut q = BinaryHeap::new();
+
+    for g in groups {
+        let mut v = vec![0; g.len()];
+        for (i, &x) in g.iter().enumerate() {
+            v[i] = a[x];
+        }
+        v.sort();
+        if count > 0 {
+            ans += v[0];
+        }
+        count -= 1;
+        for i in 1..v.len() {
+            q.push(Reverse(v[i]));
+        }
+    }
+
+    while count > 0 {
+        if let Some(Reverse(val)) = q.pop() {
+            ans += val;
+        }
+        count -= 1;
+    }
+
+    println!("{}", ans);
 }
