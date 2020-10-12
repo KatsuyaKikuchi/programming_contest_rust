@@ -21,7 +21,7 @@ name = "c"
 path = "src/VirtualContest/graph/048.rs"
 [[bin]]
 name = "d"
-path = "src/VirtualContest/graph/049.rs"
+path = "src/VirtualContest/graph/049-2.rs"
 [[bin]]
 name = "e"
 path = "src/VirtualContest/graph/050.rs"
