@@ -13,13 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/051.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/052.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/053.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/054.rs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/055.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/056.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/057.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VirtualContest/graph/058.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/UnionFind.rs" beforeDir="false" afterPath="$PROJECT_DIR$/lib/UnionFind.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VirtualContest/graph/054.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/VirtualContest/graph/054.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo.Run d">
+  <component name="RunManager" selected="Cargo.Run c">
     <configuration name="Run a" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package programming_contest_rust --bin a" />
@@ -117,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Run d" />
         <item itemvalue="Cargo.Run c" />
-        <item itemvalue="Cargo.Run b" />
-        <item itemvalue="Cargo.Run a" />
         <item itemvalue="Cargo.Run e" />
+        <item itemvalue="Cargo.Run a" />
+        <item itemvalue="Cargo.Run d" />
+        <item itemvalue="Cargo.Run b" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +163,8 @@
       <workItem from="1601991879179" duration="1234000" />
       <workItem from="1601993531936" duration="9721000" />
       <workItem from="1602504144285" duration="1189000" />
-      <workItem from="1602507466365" duration="6375000" />
+      <workItem from="1602507466365" duration="6787000" />
+      <workItem from="1602762666883" duration="3456000" />
     </task>
     <task id="LOCAL-00001" summary="solve ABC127">
       <created>1596724187946</created>
@@ -409,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602509645294</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="solve problems">
+      <created>1602596807520</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1602596807520</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,10 +449,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="124" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1599375184951" />
-    <state x="266" y="51" key="CommitChangelistDialog2" timestamp="1602509644996">
+    <state x="266" y="51" key="CommitChangelistDialog2" timestamp="1602596807292">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="266" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602509644996" />
+    <state x="266" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1602596807292" />
     <state x="144" y="78" key="DiffContextDialog" timestamp="1601106231501">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -460,46 +469,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="451" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1596632130026" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1602596711839">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1602766331821">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602596711839" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602766331821" />
+    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1602766092349" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1601993457207" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1602596711839">
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1602766331820">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602596711839" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602766331820" />
+    <state width="1398" height="304" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1602766092347" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1601993457207" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1602596711838">
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1602766331820">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602596711838" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602766331820" />
+    <state width="1398" height="304" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1602766092346" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1601993457206" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1602596711839">
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1602766331821">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602596711839" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602766331821" />
+    <state width="1398" height="304" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1602766092348" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1601993457207" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1602595881543">
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1602766266162">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602595881543" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1602595881542">
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602766266162" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1602766266161">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1602595881542" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1602595881542">
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1602766266161" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1602766266161">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1602595881542" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1602595881543">
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1602766266161" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1602766266162">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1602595881543" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1602509649489">
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1602766266162" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1602596809432">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602509649489" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602596809432" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601107655611">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

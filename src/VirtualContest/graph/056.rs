@@ -1,3 +1,7 @@
+use proconio::input;
+use proconio::marker::Usize1;
+use std::cmp::{max, min};
+
 struct UnionFind {
     parent: Vec<usize>,
     rank: Vec<i32>,
@@ -66,4 +70,32 @@ impl UnionFind {
             .filter(|x| !x.is_empty())
             .collect()
     }
+}
+
+fn main()
+{
+    input! {
+    (n,m):(usize,usize),
+    mut c:[i64;n],
+    mut edge:[(Usize1,Usize1,i64);m]
+    }
+    let mut ans = c.iter().sum::<i64>();
+    let mut uf = UnionFind::new(n);
+    edge.sort_by(|(_, _, a), (_, _, b)| a.cmp(b));
+
+    for (a, b, cst) in edge {
+        if uf.same(a, b) {
+            continue;
+        }
+        let mx = max(c[uf.find(a)], c[uf.find(b)]);
+        let mn = min(c[uf.find(a)], c[uf.find(b)]);
+        if mx < cst {
+            continue;
+        }
+
+        ans -= mx - cst;
+        c[uf.unit(a, b)] = mn;
+    }
+
+    println!("{}", ans);
 }
