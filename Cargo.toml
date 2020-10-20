@@ -15,13 +15,13 @@ name = "a"
 path = "src/VirtualContest/graph/056.rs"
 [[bin]]
 name = "b"
-path = "src/VirtualContest/graph/057.rs"
+path = "src/VirtualContest/graph/062.rs"
 [[bin]]
 name = "c"
 path = "src/VirtualContest/graph/058.rs"
 [[bin]]
 name = "d"
-path = "src/VirtualContest/graph/054.rs"
+path = "src/VirtualContest/graph/059.rs"
 [[bin]]
 name = "e"
-path = "src/VirtualContest/graph/055.rs"
+path = "src/VirtualContest/graph/060.rs"
