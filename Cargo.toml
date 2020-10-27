@@ -9,19 +9,20 @@ edition = "2018"
 [dependencies]
 proconio = {version = "0.4.1", features = ["derive"] }
 ordered-float = "2.0.0"
+clippy = "0.0.302"
 
 [[bin]]
 name = "a"
-path = "src/VirtualContest/graph/056.rs"
+path = "src/VirtualContest/graph/061.rs"
 [[bin]]
 name = "b"
 path = "src/VirtualContest/graph/062.rs"
 [[bin]]
 name = "c"
-path = "src/VirtualContest/graph/058.rs"
+path = "src/VirtualContest/graph/063.rs"
 [[bin]]
 name = "d"
-path = "src/VirtualContest/graph/059.rs"
+path = "src/VirtualContest/graph/064.rs"
 [[bin]]
 name = "e"
 path = "src/VirtualContest/graph/060.rs"
