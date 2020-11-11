@@ -1,3 +1,8 @@
+use proconio::input;
+use proconio::marker::Usize1;
+use std::cmp::min;
+use std::collections::BTreeSet;
+
 struct UnionFind {
     parent: Vec<usize>,
     rank: Vec<i32>,
@@ -74,5 +79,59 @@ impl UnionFind {
             .into_iter()
             .filter(|x| !x.is_empty())
             .collect()
+    }
+}
+
+fn main()
+{
+    input! {
+    (n,m,q):(usize,usize,usize),
+    mut edge:[(Usize1,Usize1,i64);m],
+    query:[usize;q]
+    }
+
+    edge.sort_by_key(|&(_, _, c)| c);
+
+    let mut uf = UnionFind::new(n);
+    let mut nums = vec![0; n + 1];
+    nums[1] = n;
+    let inf = 1i64 << 60;
+    let mut ans = vec![inf; n + 1];
+    ans[1] = 0;
+
+    let mut set = BTreeSet::new();
+    set.insert(1);
+
+    for (a, b, c) in edge {
+        if uf.same(a, b) {
+            continue;
+        }
+        let (s0, s1) = (uf.size(a), uf.size(b));
+        nums[s0] -= s0;
+        if nums[s0] == 0 {
+            set.remove(&s0);
+        }
+        nums[s1] -= s1;
+        if nums[s1] == 0 {
+            set.remove(&s1);
+        }
+        set.insert(s0 + s1);
+        nums[s0 + s1] += s0 + s1;
+
+        let idx = set.iter().min().unwrap().clone();
+        ans[idx] = min(ans[idx], c);
+        uf.unit(a, b);
+    }
+
+    for i in (0..n).rev() {
+        ans[i] = min(ans[i], ans[i + 1]);
+    }
+
+    for x in query {
+        if x > n || ans[x] == inf {
+            println!("trumpet")
+        } else {
+            println!("{}", ans[x]);
+        }
     }
 }
