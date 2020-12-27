@@ -1,110 +1,52 @@
 use proconio::input;
-use std::collections::{VecDeque, BinaryHeap};
 use proconio::marker::Usize1;
-
-struct Node {
-    edge: Vec<(usize, i64)>,
-    parent: usize,
-    depth: i64,
-}
-
-struct RootedTree {
-    node: Vec<Node>,
-    root: usize,
-}
-
-impl Node {
-    fn new(parent: usize) -> Self {
-        Node {
-            edge: Vec::new(),
-            parent: parent,
-            depth: 0,
-        }
-    }
-}
-
-#[allow(dead_code)]
-impl RootedTree {
-    fn new(n: usize, r: usize) -> Self {
-        RootedTree {
-            node: (0..n).map(|i| Node::new(i)).collect(),
-            root: r,
-        }
-    }
-
-    fn add_edge(&mut self, v0: usize, v1: usize, weight: i64) {
-        self.node[v0].edge.push((v1, weight));
-        self.node[v1].edge.push((v0, weight));
-    }
-
-    fn build(&mut self) {
-        let mut q: VecDeque<(usize, usize, i64)> = VecDeque::new();
-        q.push_back((self.root, self.root, 0));
-
-        while let Some((i, p, d)) = q.pop_back() {
-            self.node[i].depth = d;
-            self.node[i].parent = p;
-            if let Some(idx) = self.node[i].edge.iter()
-                .position(|&(i, _)| i == p) {
-                self.node[i].edge.remove(idx);
-            }
-
-            for &(nxt, weight) in self.node[i].edge.iter() {
-                let depth = weight + d;
-                q.push_back((nxt, i, depth));
-            }
-        }
-    }
-}
+use std::collections::BinaryHeap;
+use std::cmp::Reverse;
 
 fn main()
 {
     input! {
-    (n,m):(usize,usize),
-    edge:[(Usize1,Usize1);n-1],
-    c:[Usize1;m],
+    (n,m,k):(usize,usize,i64),
+    t:[i64;n-2],
+    edge:[(Usize1,Usize1,i64,i64);m],
     }
 
-    let mut tree = RootedTree::new(n, c[0]);
-    for (a, b) in edge {
-        tree.add_edge(a, b, 1);
+    let mut v = vec![vec![]; n];
+    for (a, b, c, d) in edge {
+        v[a].push((b, c, d));
+        v[b].push((a, c, d));
     }
-    tree.build();
+
+    let inf = 1i64 << 60;
+    let mut dist = vec![inf; n];
+    dist[0] = 0;
+
     let mut q = BinaryHeap::new();
-    let mut pic = vec![false; n];
-    for i in c {
-        pic[i] = true;
-    }
-    for i in 0..n {
-        if tree.node[i].edge.len() == 0 {
-            q.push((tree.node[i].depth, i));
-        }
-    }
-
-    while let Some((depth, idx)) = q.pop() {
-        let mut count = if depth == 0 {
-            2
-        } else {
-            1
-        };
-
-        for &(cld, _) in tree.node[idx].edge.iter() {
-            if pic[cld] {
-                count -= 1;
-            }
-        }
-
-        if count < 0 {
-            println!("trumpet");
-            return;
-        }
-        let p = tree.node[idx].parent;
-        if p == idx {
+    q.push(Reverse((0, 0)));
+    while let Some(Reverse((dst, idx))) = q.pop() {
+        if dist[idx] < dst {
             continue;
         }
-        pic[p] |= pic[idx];
-        q.push((depth - 1, p));
+
+        for &(nxt, cst, d) in v[idx].iter() {
+            let mut cost = dst;
+            if idx > 0 && idx < n - 1 {
+                cost += t[idx - 1];
+            }
+            cost += (d - (cost % d)) % d + cst;
+            if dist[nxt] <= cost {
+                continue;
+            }
+            dist[nxt] = cost;
+            q.push(Reverse((cost, nxt)));
+        }
     }
 
-    println!("Yes");
+    let ans = if dist[n - 1] > k {
+        -1
+    } else {
+        dist[n - 1]
+    };
+
+    println!("{}", ans);
 }

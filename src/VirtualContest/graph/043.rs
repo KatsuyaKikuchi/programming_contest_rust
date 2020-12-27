@@ -1,43 +1,59 @@
 use proconio::input;
 use proconio::marker::Usize1;
-use std::collections::VecDeque;
+use std::collections::BinaryHeap;
+use std::cmp::{Reverse, min};
 
 fn main()
 {
     input! {
     (n,m):(usize,usize),
-    edge:[(Usize1,Usize1);m],
+    c:i64,
+    edge:[(Usize1,Usize1,i64);m],
     }
 
+    let mut ans = 0;
     let mut v = vec![vec![]; n];
-    let mut count = vec![0; n];
-    for (a, b) in edge {
-        v[b].push(a);
-        count[a] += 1;
+    for (a, b, c) in edge {
+        v[a].push((b, c));
+        v[b].push((a, c));
+        ans += c;
     }
 
-    let mut q = VecDeque::new();
-    for i in 0..n {
-        if count[i] == 0 {
-            q.push_back(i);
+    let mut q = BinaryHeap::new();
+    let inf = 1i64 << 60;
+    let mut dist = vec![inf; n];
+    dist[0] = 0;
+    q.push(Reverse((0, 0)));
+
+    while let Some(Reverse((dst, idx))) = q.pop() {
+        if dist[idx] < dst {
+            continue;
+        }
+
+        for &(nxt, cst) in v[idx].iter() {
+            let cost = dst + cst;
+            if dist[nxt] <= cost {
+                continue;
+            }
+            dist[nxt] = cost;
+            q.push(Reverse((cost, nxt)));
         }
     }
 
-    let check = q.len() > 1;
-    let mut ans = Vec::new();
-    while let Some(idx) = q.pop_front() {
-        ans.push(idx);
-        for &nxt in v[idx].iter() {
-            count[nxt] -= 1;
-            if count[nxt] == 0 {
-                q.push_back(nxt);
+    let mut dist = dist.iter().enumerate().map(|(i, &c)| (c, i)).collect::<Vec<(i64, usize)>>();
+    dist.sort();
+
+    let mut sum = ans;
+    let mut used = vec![false; n];
+    for (dst, idx) in dist {
+        for &(nxt, c) in v[idx].iter() {
+            if used[nxt] {
+                sum -= c;
             }
         }
+        used[idx] = true;
+        ans = min(ans, c * dst + sum);
     }
 
-    ans.reverse();
-    for i in ans {
-        println!("{}", i + 1);
-    }
-    println!("{}", if check { 1 } else { 0 });
+    println!("{}", ans);
 }

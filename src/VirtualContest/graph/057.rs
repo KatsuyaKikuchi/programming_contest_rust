@@ -1,63 +1,101 @@
 use proconio::input;
-use std::cmp::{ min, Reverse};
-use std::collections::BinaryHeap;
+use proconio::marker::Usize1;
+use std::cmp::{max, min};
 
-struct Solve {
-    md: i64,
+struct UnionFind {
+    parent: Vec<usize>,
+    rank: Vec<i32>,
+    size: usize,
 }
 
-impl Solve {
-    fn new(m: i64) -> Self {
-        Solve {
-            md: m
+#[allow(dead_code)]
+impl UnionFind {
+    fn new(size: usize) -> Self {
+        UnionFind {
+            parent: (0..size).map(|i| i).collect(),
+            rank: vec![1; size],
+            size: size,
         }
     }
 
-    fn solve(&self, g: &Vec<Vec<(usize, i64)>>) -> i64 {
-        let inf = 1i64 << 60;
-        let n = g.len();
-        let mut dist = vec![vec![inf; self.md as usize]; n];
-        dist[0][0] = 0;
+    fn find(&mut self, n: usize) -> usize {
+        if self.parent[n] == n {
+            return n;
+        };
+        self.parent[n] = self.find(self.parent[n]);
+        self.parent[n]
+    }
 
-        let mut q = BinaryHeap::new();
-        q.push(Reverse((0, 0)));
-        while let Some(Reverse((dst, idx))) = q.pop() {
-            if dist[idx][(dst % self.md) as usize] < dst {
-                continue;
+    fn same(&mut self, n: usize, m: usize) -> bool {
+        self.find(n) == self.find(m)
+    }
+
+    fn unit(&mut self, n: usize, m: usize) -> usize {
+        let n = self.find(n);
+        let m = self.find(m);
+        if n == m {
+            return n;
+        }
+        if self.rank[n] > self.rank[m] {
+            self.parent[m] = n;
+            n
+        } else {
+            self.parent[n] = m;
+            if self.rank[n] == self.rank[m] {
+                self.rank[n] += self.rank[m];
             }
-            for &(nxt, cst) in g[idx].iter() {
-                let dst = dst + cst;
-                if dist[nxt][(dst % self.md) as usize] <= dst {
-                    continue;
-                }
-                dist[nxt][(dst % self.md) as usize] = dst;
-                if nxt != n - 1 {
-                    q.push(Reverse((dst, nxt)));
-                }
-            }
+            m
+        }
+    }
+
+    fn groups(&mut self) -> Vec<Vec<usize>> {
+        let mut parent_buf = vec![0; self.size];
+        let mut group_size = vec![0; self.size];
+        for i in 0..self.size {
+            parent_buf[i] = self.find(i);
+            group_size[parent_buf[i]] += 1;
         }
 
-        dist[n - 1][0]
+        let mut ret = vec![Vec::new(); self.size];
+        for i in 0..self.size {
+            ret[i].reserve(group_size[i]);
+        }
+
+        for i in 0..self.size {
+            ret[parent_buf[i]].push(i);
+        }
+
+        ret
+            .into_iter()
+            .filter(|x| !x.is_empty())
+            .collect()
     }
 }
 
 fn main()
 {
     input! {
-(n, m): (usize, usize),
-edge: [(usize, usize,i64); m]
-}
-
-    let mut v = vec![vec![]; n];
-    for (a, b, c) in edge {
-        v[a].push((b, c));
-        v[b].push((a, c));
+    (n,m):(usize,usize),
+    mut c:[i64;n],
+    mut edge:[(Usize1,Usize1,i64);m]
     }
+    let mut ans = c.iter().sum::<i64>();
+    let mut uf = UnionFind::new(n);
+    edge.sort_by(|(_, _, a), (_, _, b)| a.cmp(b));
 
-    let solve_f = Solve::new(4);
-    let solve_s = Solve::new(7);
+    for (a, b, cst) in edge {
+        if uf.same(a, b) {
+            continue;
+        }
+        let mx = max(c[uf.find(a)], c[uf.find(b)]);
+        let mn = min(c[uf.find(a)], c[uf.find(b)]);
+        if mx < cst {
+            continue;
+        }
 
-    let ans = min(solve_f.solve(&v), solve_s.solve(&v));
+        ans -= mx - cst;
+        c[uf.unit(a, b)] = mn;
+    }
 
     println!("{}", ans);
 }

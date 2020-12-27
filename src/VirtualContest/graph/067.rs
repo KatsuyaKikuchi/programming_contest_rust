@@ -1,92 +1,59 @@
 use proconio::input;
-use proconio::marker::Chars;
-use std::collections::BinaryHeap;
-use std::cmp::Reverse;
+use proconio::marker::{Usize1, Chars};
+use std::collections::VecDeque;
 
 fn main()
 {
     input! {
-    (n,m):(usize,usize),
-    k:usize,
-    d:Chars,
-    board:[Chars;n]
+    (h,w,k):(usize,usize,usize),
+    (x0,y0):(Usize1,Usize1),
+    (x1,y1):(Usize1,Usize1),
+    board:[Chars;h]
     }
+
     let inf = 1i64 << 60;
-    let mut dist = vec![vec![inf; m]; n];
-    let (mut x0, mut y0) = (0, 0);
-    let (mut x1, mut y1) = (0, 0);
-    for i in 0..n {
-        for j in 0..m {
-            if board[i][j] == 'S' {
-                x0 = i;
-                y0 = j;
-            }
-            if board[i][j] == 'G' {
-                x1 = i;
-                y1 = j;
-            }
-        }
+    let mut dist = vec![vec![vec![inf; 4]; w]; h];
+    let dt = vec![(0, 1), (1, 0), (-1, 0), (0, -1)];
+    let mut q = VecDeque::new();
+    for i in 0..4 {
+        dist[x0][y0][i] = 0;
     }
-    let mut nxt = vec![vec![k; 4]; k];
-    for i in 0..k {
-        let dir = match d[i] {
-            'R' => 0,
-            'D' => 1,
-            'L' => 2,
-            'U' => 3,
-            _ => k
-        };
-        nxt[i][dir] = i;
-    }
-    for i in (0..2 * k).rev() {
-        let idx = i % k;
-        let n = (idx + 1) % k;
-        for j in 0..4 {
-            if nxt[idx][j] == k {
-                nxt[idx][j] = nxt[n][j];
+    q.push_back(((x0, y0), 0));
+
+    while let Some(((x, y), dst)) = q.pop_front() {
+        let dst = dst + 1;
+        for (i, &nxt) in dt.iter().enumerate() {
+            for d in 0..(k as i32) {
+                let (x, y) = (x as i32 + nxt.0 * (d + 1), y as i32 + nxt.1 * (d + 1));
+                if x < 0 || y < 0 {
+                    break;
+                }
+                let (x, y) = (x as usize, y as usize);
+                if x >= h || y >= w {
+                    break;
+                }
+                if board[x][y] == '@' || dist[x][y][i] <= dst {
+                    break;
+                }
+                let &mn = dist[x][y].iter().min().unwrap();
+                if mn < dst {
+                    break;
+                }
+                dist[x][y][i] = dst;
+                q.push_back(((x, y), dst));
             }
         }
     }
 
-    let mut q = BinaryHeap::new();
-    let dt = vec![(0, 1), (1, 0), (0, -1), (-1, 0)];
-    q.push(Reverse((0, (x0, y0))));
-    while let Some(Reverse((dst, (x, y)))) = q.pop() {
-        if dist[x][y] < dst {
-            continue;
+    let ans = if let Some(&value) = dist[x1][y1].iter().min() {
+        if value == inf {
+            -1
+        } else {
+            value
         }
-        let idx = (dst as usize) % k;
-        for (i, &(dx, dy)) in dt.iter().enumerate() {
-            let (x, y) = (x as i32 + dx, y as i32 + dy);
-            if x < 0 || y < 0 {
-                continue;
-            }
-            let (x, y) = (x as usize, y as usize);
-            if x >= n || y >= m {
-                continue;
-            }
-            let n = nxt[idx][i];
-            if n == k || board[x][y] == '#' {
-                continue;
-            }
-            let d = if n < idx {
-                n + k - idx
-            } else {
-                n - idx
-            };
-            let dst = dst + 1 + d as i64;
-            if dist[x][y] <= dst {
-                continue;
-            }
-            dist[x][y] = dst;
-            q.push(Reverse((dst, (x, y))));
-        }
-    }
-
-    let ans = if dist[x1][y1] == inf {
-        -1
     } else {
-        dist[x1][y1]
+        -1
     };
+
     println!("{}", ans);
 }

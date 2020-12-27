@@ -1,62 +1,63 @@
 use proconio::input;
 use proconio::marker::Usize1;
-use std::collections::BinaryHeap;
-use std::cmp::{Reverse, min};
+use std::cmp::min;
 
 fn main()
 {
     input! {
-    (n,m,k):(usize,usize,usize),
-    edge:[(Usize1,Usize1,i64);m],
-    a:[(usize,i64);n]
+    (n,m,mut s):(usize,usize,usize),
+    edge:[(Usize1,Usize1,usize,i64);m],
+    ex:[(usize,i64);n]
     }
+
+    let mx = 4000usize;
+    s = min(mx - 1, s);
 
     let inf = 1i64 << 60;
-    let mut cost = vec![vec![inf; k + 1]; n];
-    let mut v = vec![vec![]; n];
-
-    for (a, b, c) in edge {
-        v[a].push((b, c));
-        v[b].push((a, c));
-    }
-
-    cost[0][0] = 0;
-    let mut q = BinaryHeap::new();
-    q.push(Reverse((0, 0, 0)));
-
-    while let Some(Reverse((cst, idx, num))) = q.pop()
-    {
-        if cost[idx][num] < cst {
-            continue;
+    // 都市iに銀貨をj枚持った状態でたどり着くための最小時間
+    let mut dist = vec![vec![inf; mx]; n];
+    dist[0][s] = 0;
+    loop {
+        let mut update = false;
+        for i in 0..n {
+            for j in 0..mx {
+                let nxt = min(mx - 1, j + ex[i].0);
+                let time = dist[i][j] + ex[i].1;
+                dist[i][nxt] = min(dist[i][nxt], time);
+            }
         }
 
-        let mut cst = cst;
-        let mut num = num;
-        loop {
-            for &(nxt, dst) in v[idx].iter()
-            {
-                let cst = cst + dst;
-                if cost[nxt][num] <= cst {
+        for &(a, b, c, d) in edge.iter() {
+            for i in c..mx {
+                let nxt = i - c;
+                let time = dist[a][i] + d;
+                if dist[b][nxt] <= time {
                     continue;
                 }
-                cost[nxt][num] = cst;
-                q.push(Reverse((cst, nxt, num)));
+                dist[b][nxt] = time;
+                update = true;
             }
-            num = min(num + a[idx].0, k);
-            cst += a[idx].1;
+            for i in c..mx {
+                let nxt = i - c;
+                let time = dist[b][i] + d;
+                if dist[a][nxt] <= time {
+                    continue;
+                }
+                dist[a][nxt] = time;
+                update = true;
+            }
+        }
 
-            if cost[idx][num] <= cst {
-                break;
-            }
-            cost[idx][num] = cst;
+        if !update {
+            break;
         }
     }
 
-    let ans = if cost[n - 1][k] == inf {
-        -1
-    } else {
-        cost[n - 1][k]
-    };
-
-    println!("{}", ans);
+    for i in 1..n {
+        let mut ans = inf;
+        for j in 0..mx {
+            ans = min(ans, dist[i][j]);
+        }
+        println!("{}", ans);
+    }
 }

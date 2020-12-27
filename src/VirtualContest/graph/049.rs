@@ -1,51 +1,64 @@
 use proconio::input;
 use proconio::marker::Usize1;
+use std::collections::VecDeque;
 
 fn main()
 {
     input! {
-    n:usize,
-    edge:[(Usize1,Usize1);n-1],
+    (n,m):(usize,usize),
+    edge:[(Usize1,Usize1);m],
     }
 
     let mut v = vec![vec![]; n];
-    for (a, b) in edge {
+    for (a, b) in edge
+    {
         v[a].push(b);
         v[b].push(a);
     }
 
-    let mut s = vec![0; n + 1];
-    for i in (0..n).rev() {
-        let mut t = 1;
-        for &idx in v[i].iter() {
-            if idx > i {
-                t -= 1;
-            }
-        }
-        s[i] = s[i + 1] + t;
-    }
-
-    let mut sum = s.iter().sum::<i64>();
-
-    let mut ans = 0;
-    for i in (0..n).rev() {
-        ans += sum;
-        let mut t = Vec::new();
-        for &idx in v[i].iter() {
-            if idx > i {
+    let mut used = vec![false; n];
+    let mut q = VecDeque::new();
+    q.push_back(0);
+    used[0] = true;
+    q.push_back(v[0][0]);
+    used[v[0][0]] = true;
+    loop {
+        let mut update = false;
+        let t = q.front().unwrap().clone();
+        for &nxt in v[t].iter() {
+            if used[nxt] {
                 continue;
             }
-            t.push(idx);
+            used[nxt] = true;
+            q.push_front(nxt);
+            update = true;
+            break;
         }
-        t.sort();
-        let start = if let Some(idx) = t.pop() {
-            idx as i64
-        } else {
-            -1
-        };
-        sum -= (i as i64) - start;
-        sum += t.iter().map(|&x| (x as i64) + 1).sum::<i64>();
+        if !update {
+            break;
+        }
     }
 
-    println!("{}", ans);
+    loop {
+        let mut update = false;
+        let t = q.back().unwrap().clone();
+        for &nxt in v[t].iter() {
+            if used[nxt] {
+                continue;
+            }
+            used[nxt] = true;
+            q.push_back(nxt);
+            update = true;
+            break;
+        }
+        if !update {
+            break;
+        }
+    }
+
+    println!("{}", q.len());
+    while let Some(idx) = q.pop_front() {
+        print!("{} ", idx + 1);
+    }
+    println!("");
 }

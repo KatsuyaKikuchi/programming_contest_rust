@@ -1,59 +1,73 @@
 use proconio::input;
 use proconio::marker::Usize1;
-use std::collections::BinaryHeap;
-use std::cmp::{Reverse, min};
+use std::collections::VecDeque;
+use std::cmp::max;
 
 fn main()
 {
     input! {
-    (n,m):(usize,usize),
-    c:i64,
-    edge:[(Usize1,Usize1,i64);m],
+    n:usize,
+    edge:[(Usize1,Usize1);n-1],
     }
 
-    let mut ans = 0;
+    if n == 1 {
+        println!("First");
+        return;
+    }
+
     let mut v = vec![vec![]; n];
-    for (a, b, c) in edge {
-        v[a].push((b, c));
-        v[b].push((a, c));
-        ans += c;
+    for (a, b) in edge {
+        v[a].push(b);
+        v[b].push(a);
     }
 
-    let mut q = BinaryHeap::new();
-    let inf = 1i64 << 60;
-    let mut dist = vec![inf; n];
-    dist[0] = 0;
-    q.push(Reverse((0, 0)));
-
-    while let Some(Reverse((dst, idx))) = q.pop() {
-        if dist[idx] < dst {
-            continue;
+    let mut s = 0;
+    for i in 0..n {
+        if v[i].len() == 1 {
+            s = i;
+            break;
         }
+    }
 
-        for &(nxt, cst) in v[idx].iter() {
-            let cost = dst + cst;
-            if dist[nxt] <= cost {
+    let mut len = 0;
+    let mut q = VecDeque::new();
+    q.push_back((s, 0));
+    let mut used = vec![false; n];
+    used[s] = true;
+    while let Some((idx, dist)) = q.pop_front() {
+        for &nxt in v[idx].iter() {
+            if used[nxt] {
                 continue;
             }
-            dist[nxt] = cost;
-            q.push(Reverse((cost, nxt)));
-        }
-    }
-
-    let mut dist = dist.iter().enumerate().map(|(i, &c)| (c, i)).collect::<Vec<(i64, usize)>>();
-    dist.sort();
-
-    let mut sum = ans;
-    let mut used = vec![false; n];
-    for (dst, idx) in dist {
-        for &(nxt, c) in v[idx].iter() {
-            if used[nxt] {
-                sum -= c;
+            used[nxt] = true;
+            let dist = dist + 1;
+            if len < dist {
+                s = nxt;
             }
+            len = max(len, dist);
+            q.push_back((nxt, dist));
         }
-        used[idx] = true;
-        ans = min(ans, c * dst + sum);
+    }
+    let mut q = VecDeque::new();
+    q.push_back((s, 0));
+    let mut used = vec![false; n];
+    used[s] = true;
+    while let Some((idx, dist)) = q.pop_front() {
+        for &nxt in v[idx].iter() {
+            if used[nxt] {
+                continue;
+            }
+            used[nxt] = true;
+            let dist = dist + 1;
+            len = max(len, dist);
+            q.push_back((nxt, dist));
+        }
     }
 
+    let ans = if len % 3 == 1 {
+        "Second"
+    } else {
+        "First"
+    };
     println!("{}", ans);
 }

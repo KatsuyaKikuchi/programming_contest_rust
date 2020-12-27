@@ -1,72 +1,52 @@
 use proconio::input;
 use proconio::marker::Usize1;
-use std::collections::VecDeque;
+use std::collections::BinaryHeap;
+use std::cmp::{Reverse, max};
 
 fn main()
 {
     input! {
-    n:usize,
-    m:usize,
+    (n,m,k):(usize,usize,usize),
     edge:[(Usize1,Usize1,i64);m],
+    s:[Usize1;k],
     }
 
-    let mut v0 = vec![vec![]; n];
-    let mut v1 = vec![vec![]; n];
-    for &(a, b, _) in edge.iter() {
-        v0[a].push(b);
-        v1[b].push(a);
-    }
-    let mut count = vec![0; n];
-    let mut used = vec![false; n];
-    let mut q = VecDeque::new();
-    q.push_back(0);
-    used[0] = true;
-    while let Some(idx) = q.pop_front() {
-        count[idx] += 1;
-        for &nxt in v0[idx].iter() {
-            if used[nxt] {
-                continue;
-            }
-            used[nxt] = true;
-            q.push_back(nxt);
-        }
-    }
-    let mut used = vec![false; n];
-    let mut q = VecDeque::new();
-    q.push_back(n - 1);
-    used[n - 1] = true;
-    while let Some(idx) = q.pop_front() {
-        count[idx] += 1;
-        for &nxt in v1[idx].iter() {
-            if used[nxt] {
-                continue;
-            }
-            used[nxt] = true;
-            q.push_back(nxt);
-        }
+    let mut v = vec![vec![]; n];
+    for &(a, b, c) in edge.iter() {
+        v[a].push((b, c));
+        v[b].push((a, c));
     }
 
     let inf = 1i64 << 60;
-    let mut score = (0..n).map(|i| if i == 0 { 0 } else { inf }).collect::<Vec<i64>>();
+    let mut ans = 0;
+    let mut dist = vec![inf; n];
 
-    for _ in 0..n + 5 {
-        let mut update = false;
+    let mut q = BinaryHeap::new();
+    for t in s {
+        q.push(Reverse((0, t)));
+        dist[t] = 0;
+    }
 
-        for (a, b, c) in edge.iter().map(|&(a, b, c)| (a, b, -c)) {
-            if count[a] < 2 || count[b] < 2 {
-                continue;
-            }
-            if score[a] + c >= score[b] {
-                continue;
-            }
-            score[b] = score[a] + c;
-            update = true;
+    while let Some(Reverse((dst, idx))) = q.pop() {
+        if dist[idx] < dst {
+            continue;
         }
+        ans = max(ans, dst);
 
-        if !update {
-            println!("{}", -score[n - 1]);
-            return;
+        for &(nxt, c) in v[idx].iter() {
+            if dist[nxt] <= dist[idx] && dist[nxt] + c != dist[idx] {
+                let cost = dist[nxt] + (dist[idx] - dist[nxt] + c + 1) / 2;
+                ans = max(ans, cost);
+                continue;
+            }
+            let cost = c + dst;
+            if dist[nxt] < cost {
+                continue;
+            }
+            dist[nxt] = cost;
+            q.push(Reverse((cost, nxt)));
         }
     }
-    println!("inf");
+
+    println!("{}", ans);
 }

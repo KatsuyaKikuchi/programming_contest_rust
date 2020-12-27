@@ -1,63 +1,63 @@
 use proconio::input;
-use proconio::marker::Usize1;
-use std::cmp::min;
+use std::cmp::{ min, Reverse};
+use std::collections::BinaryHeap;
+
+struct Solve {
+    md: i64,
+}
+
+impl Solve {
+    fn new(m: i64) -> Self {
+        Solve {
+            md: m
+        }
+    }
+
+    fn solve(&self, g: &Vec<Vec<(usize, i64)>>) -> i64 {
+        let inf = 1i64 << 60;
+        let n = g.len();
+        let mut dist = vec![vec![inf; self.md as usize]; n];
+        dist[0][0] = 0;
+
+        let mut q = BinaryHeap::new();
+        q.push(Reverse((0, 0)));
+        while let Some(Reverse((dst, idx))) = q.pop() {
+            if dist[idx][(dst % self.md) as usize] < dst {
+                continue;
+            }
+            for &(nxt, cst) in g[idx].iter() {
+                let dst = dst + cst;
+                if dist[nxt][(dst % self.md) as usize] <= dst {
+                    continue;
+                }
+                dist[nxt][(dst % self.md) as usize] = dst;
+                if nxt != n - 1 {
+                    q.push(Reverse((dst, nxt)));
+                }
+            }
+        }
+
+        dist[n - 1][0]
+    }
+}
 
 fn main()
 {
     input! {
-    (n,m,mut s):(usize,usize,usize),
-    edge:[(Usize1,Usize1,usize,i64);m],
-    ex:[(usize,i64);n]
+(n, m): (usize, usize),
+edge: [(usize, usize,i64); m]
+}
+
+    let mut v = vec![vec![]; n];
+    for (a, b, c) in edge {
+        v[a].push((b, c));
+        v[b].push((a, c));
     }
 
-    let mx = 4000usize;
-    s = min(mx - 1, s);
+    let solve_f = Solve::new(4);
+    let solve_s = Solve::new(7);
 
-    let inf = 1i64 << 60;
-    // 都市iに銀貨をj枚持った状態でたどり着くための最小時間
-    let mut dist = vec![vec![inf; mx]; n];
-    dist[0][s] = 0;
-    loop {
-        let mut update = false;
-        for i in 0..n {
-            for j in 0..mx {
-                let nxt = min(mx - 1, j + ex[i].0);
-                let time = dist[i][j] + ex[i].1;
-                dist[i][nxt] = min(dist[i][nxt], time);
-            }
-        }
+    let ans = min(solve_f.solve(&v), solve_s.solve(&v));
 
-        for &(a, b, c, d) in edge.iter() {
-            for i in c..mx {
-                let nxt = i - c;
-                let time = dist[a][i] + d;
-                if dist[b][nxt] <= time {
-                    continue;
-                }
-                dist[b][nxt] = time;
-                update = true;
-            }
-            for i in c..mx {
-                let nxt = i - c;
-                let time = dist[b][i] + d;
-                if dist[a][nxt] <= time {
-                    continue;
-                }
-                dist[a][nxt] = time;
-                update = true;
-            }
-        }
-
-        if !update {
-            break;
-        }
-    }
-
-    for i in 1..n {
-        let mut ans = inf;
-        for j in 0..mx {
-            ans = min(ans, dist[i][j]);
-        }
-        println!("{}", ans);
-    }
+    println!("{}", ans);
 }

@@ -1,10 +1,12 @@
 use proconio::input;
 use proconio::marker::Usize1;
-use std::collections::HashMap;
+use std::cmp::min;
+use std::collections::BTreeSet;
 
 struct UnionFind {
     parent: Vec<usize>,
     rank: Vec<i32>,
+    count: Vec<usize>,
     size: usize,
 }
 
@@ -14,6 +16,7 @@ impl UnionFind {
         UnionFind {
             parent: (0..size).map(|i| i).collect(),
             rank: vec![1; size],
+            count: vec![1; size],
             size: size,
         }
     }
@@ -30,20 +33,29 @@ impl UnionFind {
         self.find(n) == self.find(m)
     }
 
-    fn unit(&mut self, n: usize, m: usize) {
+    fn unit(&mut self, n: usize, m: usize) -> usize {
         let n = self.find(n);
         let m = self.find(m);
         if n == m {
-            return;
+            return n;
         }
         if self.rank[n] > self.rank[m] {
             self.parent[m] = n;
+            self.count[n] += self.count[m];
+            n
         } else {
             self.parent[n] = m;
+            self.count[m] += self.count[n];
             if self.rank[n] == self.rank[m] {
                 self.rank[n] += self.rank[m];
             }
+            m
         }
+    }
+
+    fn size(&mut self, n: usize) -> usize {
+        let n = self.find(n);
+        self.count[n]
     }
 
     fn groups(&mut self) -> Vec<Vec<usize>> {
@@ -70,35 +82,56 @@ impl UnionFind {
     }
 }
 
-fn main() {
+fn main()
+{
     input! {
-    (n,k,l):(usize,usize,usize),
-    v0:[(Usize1,Usize1);k],
-    v1:[(Usize1,Usize1);l],
+    (n,m,q):(usize,usize,usize),
+    mut edge:[(Usize1,Usize1,i64);m],
+    query:[usize;q]
     }
 
-    let mut uf0 = UnionFind::new(n);
-    let mut uf1 = UnionFind::new(n);
+    edge.sort_by_key(|&(_, _, c)| c);
 
-    for (a, b) in v0 {
-        uf0.unit(a, b);
-    }
-    for (a, b) in v1 {
-        uf1.unit(a, b);
+    let mut uf = UnionFind::new(n);
+    let mut nums = vec![0; n + 1];
+    nums[1] = n;
+    let inf = 1i64 << 60;
+    let mut ans = vec![inf; n + 1];
+    ans[1] = 0;
+
+    let mut set = BTreeSet::new();
+    set.insert(1);
+
+    for (a, b, c) in edge {
+        if uf.same(a, b) {
+            continue;
+        }
+        let (s0, s1) = (uf.size(a), uf.size(b));
+        nums[s0] -= s0;
+        if nums[s0] == 0 {
+            set.remove(&s0);
+        }
+        nums[s1] -= s1;
+        if nums[s1] == 0 {
+            set.remove(&s1);
+        }
+        set.insert(s0 + s1);
+        nums[s0 + s1] += s0 + s1;
+
+        let idx = set.iter().min().unwrap().clone();
+        ans[idx] = min(ans[idx], c);
+        uf.unit(a, b);
     }
 
-    let mut m = HashMap::new();
-
-    for i in 0..n {
-        let x = (uf0.find(i), uf1.find(i));
-        let val = m.entry(x).or_insert(0);
-        *val += 1;
+    for i in (0..n).rev() {
+        ans[i] = min(ans[i], ans[i + 1]);
     }
 
-    for i in 0..n {
-        let x = (uf0.find(i), uf1.find(i));
-        let val = m.get(&x).unwrap();
-        print!("{} ", val);
+    for x in query {
+        if x > n || ans[x] == inf {
+            println!("trumpet")
+        } else {
+            println!("{}", ans[x]);
+        }
     }
-    println!("");
 }

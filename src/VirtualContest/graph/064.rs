@@ -1,82 +1,138 @@
 use proconio::input;
-use proconio::marker::Usize1;
-use std::collections::VecDeque;
+
+struct UnionFind {
+    parent: Vec<usize>,
+    rank: Vec<i32>,
+    size: usize,
+}
+
+#[allow(dead_code)]
+impl UnionFind {
+    fn new(size: usize) -> Self {
+        UnionFind {
+            parent: (0..size).map(|i| i).collect(),
+            rank: vec![1; size],
+            size: size,
+        }
+    }
+
+    fn find(&mut self, n: usize) -> usize {
+        if self.parent[n] == n {
+            return n;
+        };
+        self.parent[n] = self.find(self.parent[n]);
+        self.parent[n]
+    }
+
+    fn same(&mut self, n: usize, m: usize) -> bool {
+        self.find(n) == self.find(m)
+    }
+
+    fn unit(&mut self, n: usize, m: usize) -> usize {
+        let n = self.find(n);
+        let m = self.find(m);
+        if n == m {
+            return n;
+        }
+        if self.rank[n] > self.rank[m] {
+            self.parent[m] = n;
+            n
+        } else {
+            self.parent[n] = m;
+            if self.rank[n] == self.rank[m] {
+                self.rank[n] += self.rank[m];
+            }
+            m
+        }
+    }
+
+    fn groups(&mut self) -> Vec<Vec<usize>> {
+        let mut parent_buf = vec![0; self.size];
+        let mut group_size = vec![0; self.size];
+        for i in 0..self.size {
+            parent_buf[i] = self.find(i);
+            group_size[parent_buf[i]] += 1;
+        }
+
+        let mut ret = vec![Vec::new(); self.size];
+        for i in 0..self.size {
+            ret[i].reserve(group_size[i]);
+        }
+
+        for i in 0..self.size {
+            ret[parent_buf[i]].push(i);
+        }
+
+        ret
+            .into_iter()
+            .filter(|x| !x.is_empty())
+            .collect()
+    }
+}
+
+// return max index that f(value,v[index])==true
+fn lower_bound<T>(value: T, v: &Vec<T>, f: Box<dyn Fn(&T, &T) -> bool>) -> Option<usize> {
+    let n = v.len();
+    if n == 0 {
+        return None;
+    }
+    if !f(&value, &v[0]) {
+        return None;
+    }
+
+    let (mut ret, mut ng) = (0, n);
+    while (ng - ret) > 1 {
+        let mid = (ng + ret) / 2;
+        if f(&value, &v[mid]) {
+            ret = mid;
+        } else {
+            ng = mid;
+        }
+    }
+    Some(ret)
+}
 
 fn main()
 {
     input! {
-    (n,m):(usize,usize),
-    edge:[(Usize1,Usize1);m]
+    n:usize,
+    mut pos:[(i64,i64);n],
     }
 
-    let mut to = vec![vec![]; n];
-    let mut from = vec![vec![]; n];
-    for (a, b) in edge {
-        to[a].push(b);
-        from[b].push(a);
+    let mut x = Vec::new();
+    for &(a, _) in pos.iter() {
+        x.push(a);
     }
+    x.sort();
+    x.dedup();
 
-    let inf = 1i64 << 60;
-    let mut s = n;
-    let mut len = inf;
+    let mut uf = UnionFind::new(x.len());
+    let mut y = vec![vec![]; x.len()];
+    pos.sort_by(|(_, y0), (_, y1)| y0.cmp(y1));
     for i in 0..n {
-        let mut dist = vec![inf; n];
-        dist[i] = 0;
-        let mut q = VecDeque::new();
-        q.push_back(i);
-        while let Some(idx) = q.pop_front() {
-            let cost = dist[idx] + 1;
-            for &nxt in to[idx].iter() {
-                if nxt == i && cost < len {
-                    len = cost;
-                    s = i;
-                }
-                if dist[nxt] <= cost {
-                    continue;
-                }
-                dist[nxt] = cost;
-                q.push_back(nxt);
-            }
+        let idx0 = lower_bound(pos[i].0, &x,
+                               Box::new(|a, b| a >= b)).unwrap();
+        y[idx0].push(pos[i].1);
+
+        if i == n - 1 || pos[i].1 != pos[i + 1].1 {
+            continue;
         }
+        let idx1 = lower_bound(pos[i + 1].0, &x,
+                               Box::new(|a, b| a >= b)).unwrap();
+        uf.unit(idx0, idx1);
     }
 
-    if s == n {
-        println!("-1");
-        return;
+    let mut ans: i64 = -(n as i64);
+    let group = uf.groups();
+    for g in group {
+        let mut v = Vec::new();
+        for &i in g.iter() {
+            v.append(&mut y[i]);
+        }
+        v.sort();
+        v.dedup();
+        ans += (v.len() as i64) * (g.len() as i64);
     }
 
-    let mut dist = vec![inf; n];
-    let mut q = VecDeque::new();
-    q.push_back((s, 0));
-    while let Some((idx, cst)) = q.pop_front() {
-        let cost = cst + 1;
-        for &nxt in to[idx].iter() {
-            if dist[nxt] <= cost {
-                continue;
-            }
-            dist[nxt] = cost;
-            q.push_back((nxt, cost));
-        }
-    }
-
-    let mut ans = Vec::new();
-    while dist[s] < inf {
-        if let Some(&last) = ans.last() {
-            if last == s {
-                break;
-            }
-        }
-        ans.push(s);
-        for &nxt in from[s].iter() {
-            if dist[nxt] == dist[s] - 1 {
-                s = nxt;
-                break;
-            }
-        }
-    }
-
-    println!("{}", ans.len());
-    for a in ans {
-        println!("{}", a + 1);
-    }
+    println!("{}", ans);
 }
