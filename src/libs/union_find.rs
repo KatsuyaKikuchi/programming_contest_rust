@@ -41,6 +41,28 @@ impl UnionFind {
         let idx = self.find(idx);
         -self.parent_or_size[idx] as usize
     }
+
+
+    pub fn group(&mut self) -> Vec<Vec<usize>> {
+        let mut parent_buf = vec![0; self.n];
+        let mut group_size = vec![0; self.n];
+        for i in 0..self.n {
+            parent_buf[i] = self.find(i);
+            group_size[parent_buf[i]] += 1;
+        }
+        let mut result = vec![Vec::new(); self.n];
+        for i in 0..self.n {
+            result[i].reserve(group_size[i]);
+        }
+        for i in 0..self.n {
+            result[parent_buf[i]].push(i);
+        }
+
+        result
+            .into_iter()
+            .filter(|x| !x.is_empty())
+            .collect::<Vec<Vec<usize>>>()
+    }
 }
 
 // cfg でビルドターゲットを指定
@@ -74,6 +96,20 @@ mod tests {
         for i in 3..10 {
             assert_eq!(uf.size(i), 1);
             assert_eq!(uf.same(i, 0), false);
+        }
+
+        assert_eq!(uf.unit(5, 7), 5);
+        assert!(uf.same(5, 7));
+        assert_eq!(uf.size(7), 2);
+
+        assert_eq!(uf.group(), vec![vec![0, 1, 2], vec![3], vec![4], vec![5, 7], vec![6], vec![8], vec![9]]);
+
+        assert_eq!(uf.unit(5, 2), 0);
+        let v = vec![0, 1, 2, 5, 7];
+        for &a in v.iter() {
+            for &b in v.iter() {
+                assert!(uf.same(a, b));
+            }
         }
     }
 }

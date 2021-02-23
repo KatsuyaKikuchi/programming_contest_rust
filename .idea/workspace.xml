@@ -13,12 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="solve problems">
-      <change afterPath="$PROJECT_DIR$/src/libs.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/libs/union_find.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/LowerBound.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/UnionFind.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libs/union_find.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/union_find.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +57,9 @@
       <command value="cargo test" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test libs::union_find::tests::union_find_unit_find_test">
-    <configuration name="Run programming_contest_rust" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package programming_contest_rust --bin programming_contest_rust" />
+  <component name="RunManager" selected="Cargo.Test libs::union_find::tests::union_find_test">
+    <configuration name="Test libs::union_find::tests::union_find_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package programming_contest_rust --bin programming_contest_rust libs::union_find::tests::union_find_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -143,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test libs::union_find::tests::union_find_unit_find_test" />
-        <item itemvalue="Cargo.Test union_find::tests" />
+        <item itemvalue="Cargo.Test libs::union_find::tests::union_find_test" />
         <item itemvalue="Cargo.test" />
         <item itemvalue="Cargo.Test union_find" />
-        <item itemvalue="Cargo.Run programming_contest_rust" />
+        <item itemvalue="Cargo.Test libs::union_find::tests::union_find_unit_find_test" />
+        <item itemvalue="Cargo.Test union_find::tests" />
       </list>
     </recent_temporary>
   </component>
@@ -233,14 +230,7 @@
       <workItem from="1613648543050" duration="5159000" />
       <workItem from="1613736045825" duration="4209000" />
       <workItem from="1614007369872" duration="773000" />
-      <workItem from="1614008159431" duration="9944000" />
-    </task>
-    <task id="LOCAL-00020" summary="solve virtual">
-      <created>1599838321342</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1599838321342</updated>
+      <workItem from="1614008159431" duration="12263000" />
     </task>
     <task id="LOCAL-00021" summary="solve virtual">
       <created>1599914229395</created>
@@ -578,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614045899939</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="add union_find lib">
+      <created>1614065813061</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1614065813061</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,36 +600,37 @@
     <MESSAGE value="solve problems and lower_bound lib" />
     <MESSAGE value="rename file" />
     <MESSAGE value="solve problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="solve problems" />
+    <MESSAGE value="add union_find lib" />
+    <option name="LAST_COMMIT_MESSAGE" value="add union_find lib" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="266" y="45" key="CommitChangelistDialog2" timestamp="1614045899638">
+    <state x="266" y="45" key="CommitChangelistDialog2" timestamp="1614067132570">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="266" y="45" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1614045899638" />
+    <state x="266" y="45" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1614067132570" />
     <state x="140" y="98" key="DiffContextDialog" timestamp="1614045894422">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="140" y="98" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1614045894422" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1614065702209">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1614083794515">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614065702209" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614083794515" />
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1608369443679" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1614065702208">
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1614083794513">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1614065702208" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1614083794513" />
     <state width="1398" height="304" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1608369443678" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1614065702207">
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1614083794512">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1614065702207" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1614083794512" />
     <state width="1398" height="304" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1608369443677" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1614065702208">
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1614083794514">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1614065702208" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1614083794514" />
     <state width="1398" height="304" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1608369443678" />
     <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1613821151826">
       <screen x="0" y="0" width="1440" height="900" />
