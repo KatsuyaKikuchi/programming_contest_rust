@@ -13,19 +13,19 @@ clippy = "0.0.302"
 
 [[bin]]
 name = "a"
-path = "src/VirtualContest/20210224/a.rs"
+path = "src/VirtualContest/20210225/a.rs"
 [[bin]]
 name = "b"
-path = "src/VirtualContest/20210224/b.rs"
+path = "src/VirtualContest/20210225/b.rs"
 [[bin]]
 name = "c"
-path = "src/VirtualContest/20210224/c.rs"
+path = "src/VirtualContest/20210225/c.rs"
 [[bin]]
 name = "d"
-path = "src/VirtualContest/20210224/d.rs"
+path = "src/VirtualContest/20210225/d.rs"
 [[bin]]
 name = "e"
-path = "src/VirtualContest/20210224/e.rs"
+path = "src/VirtualContest/20210225/e.rs"
 [[bin]]
 name = "f"
-path = "src/VirtualContest/20210224/f.rs"
+path = "src/VirtualContest/20210225/f.rs"
