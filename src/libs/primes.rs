@@ -6,8 +6,10 @@ pub fn primes(n: usize) -> Vec<i32> {
             continue;
         }
         primes.push(p as i32);
-        for j in (2 * p..).into_iter().step_by(p).take_while(|x| x <= &n) {
-            is_prime[j] = false;
+        let mut num = 2 * p;
+        while num <= n {
+            is_prime[num] = false;
+            num += p;
         }
     }
     primes
