@@ -6,6 +6,7 @@ pub fn primes(n: usize) -> Vec<i32> {
             continue;
         }
         primes.push(p as i32);
+        // for num in (2 * p..=n).step_by(p) 遅い
         let mut num = 2 * p;
         while num <= n {
             is_prime[num] = false;
