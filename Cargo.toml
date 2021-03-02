@@ -29,3 +29,6 @@ path = "src/VirtualContest/20210301/e.rs"
 [[bin]]
 name = "f"
 path = "src/VirtualContest/20210301/f.rs"
+[[bin]]
+name = "ee"
+path = "src/AtCoder Beginner Contest/ABC167/e.rs"

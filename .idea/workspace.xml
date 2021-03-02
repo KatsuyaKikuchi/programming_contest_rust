@@ -12,10 +12,12 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="solve problems">
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20210301/f.rs" afterDir="false" />
+    <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC167/e.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/modulo_math.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libs/primes.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/primes.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libs.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +60,22 @@
       <command value="cargo test" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Run f">
+  <component name="RunManager" selected="Cargo.Test libs::modulo_math::tests::mod_combination_test">
+    <configuration name="Run ee" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package programming_contest_rust --bin ee" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run f" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package programming_contest_rust --bin f" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -74,8 +91,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test libs::primes::tests::primes_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package programming_contest_rust --bin programming_contest_rust libs::primes::tests::primes_test -- --exact" />
+    <configuration name="Test libs::modulo_math::tests::mod_combination_out_of_size" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package programming_contest_rust --bin programming_contest_rust libs::modulo_math::tests::mod_combination_out_of_size -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -89,23 +106,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test primes" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package programming_contest_rust --bin programming_contest_rust libs::primes" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test primes::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package programming_contest_rust --bin programming_contest_rust libs::primes::tests" />
+    <configuration name="Test libs::modulo_math::tests::mod_combination_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package programming_contest_rust --bin programming_contest_rust libs::modulo_math::tests::mod_combination_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -141,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Run f" />
-        <item itemvalue="Cargo.Test primes" />
-        <item itemvalue="Cargo.Test libs::primes::tests::primes_test" />
-        <item itemvalue="Cargo.Test primes::tests" />
+        <item itemvalue="Cargo.Test libs::modulo_math::tests::mod_combination_test" />
+        <item itemvalue="Cargo.Test libs::modulo_math::tests::mod_combination_out_of_size" />
         <item itemvalue="Cargo.test" />
+        <item itemvalue="Cargo.Run ee" />
+        <item itemvalue="Cargo.Run f" />
       </list>
     </recent_temporary>
   </component>
@@ -233,14 +235,7 @@
       <workItem from="1614007369872" duration="773000" />
       <workItem from="1614008159431" duration="29661000" />
       <workItem from="1614344095748" duration="4680000" />
-      <workItem from="1614605914415" duration="3782000" />
-    </task>
-    <task id="LOCAL-00032" summary="solve problems">
-      <created>1601996377511</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1601996377511</updated>
+      <workItem from="1614605914415" duration="7610000" />
     </task>
     <task id="LOCAL-00033" summary="solve problems">
       <created>1602075058934</created>
@@ -578,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614608941375</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="solve problems">
+      <created>1614610802612</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1614610802612</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,36 +610,36 @@
     <option name="LAST_COMMIT_MESSAGE" value="solve problems" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="266" y="45" key="CommitChangelistDialog2" timestamp="1614608941170">
+    <state x="266" y="45" key="CommitChangelistDialog2" timestamp="1614610802451">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="266" y="45" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1614608941170" />
+    <state x="266" y="45" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1614610802451" />
     <state x="140" y="98" key="DiffContextDialog" timestamp="1614092593827">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="140" y="98" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1614092593827" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1614610466999">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1614697726066">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614610466999" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614697726066" />
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1608369443679" />
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1614347265256" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1614610466998">
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1614697726065">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1614610466998" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1614697726065" />
     <state width="1398" height="304" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1608369443678" />
     <state width="1398" height="304" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1614347265256" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1614610466997">
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1614697726064">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1614610466997" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1614697726064" />
     <state width="1398" height="304" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1608369443677" />
     <state width="1398" height="304" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1614347265255" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1614610466998">
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1614697726066">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1614610466998" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1614697726066" />
     <state width="1398" height="304" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1608369443678" />
     <state width="1398" height="304" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1614347265256" />
     <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1614409446678">
@@ -668,14 +670,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1614094307322" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1614608944185">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1614610805372">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1614608944185" />
-    <state x="385" y="210" width="670" height="675" key="run.anything.popup" timestamp="1614608029955">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1614610805372" />
+    <state x="385" y="210" width="670" height="675" key="run.anything.popup" timestamp="1614696699195">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="210" width="670" height="675" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1614608029955" />
+    <state x="385" y="210" width="670" height="675" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1614696699195" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1614612960595">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1614612960595" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
