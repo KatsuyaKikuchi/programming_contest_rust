@@ -8,6 +8,7 @@ edition = "2018"
 
 [dependencies]
 proconio = {version = "0.4.1", features = ["derive"] }
+rand = "0.3.0"
 ordered-float = "2.0.0"
 clippy = "0.0.302"
 
@@ -30,5 +31,5 @@ path = "src/VirtualContest/20210304/e.rs"
 name = "f"
 path = "src/VirtualContest/20210304/f.rs"
 [[bin]]
-name = "ee"
-path = "src/AtCoder Beginner Contest/ABC135/f.rs"
+name = "marason"
+path = "src/AtCoder Heuristic Contest/AHC001/a.rs"
