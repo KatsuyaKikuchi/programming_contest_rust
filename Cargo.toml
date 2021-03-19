@@ -14,22 +14,22 @@ clippy = "0.0.302"
 
 [[bin]]
 name = "a"
-path = "src/Codeforces/Div3/702/a.rs"
+path = "src/Codeforces/Div3/697/a.rs"
 [[bin]]
 name = "b"
-path = "src/Codeforces/Div3/702/b.rs"
+path = "src/Codeforces/Div3/697/b.rs"
 [[bin]]
 name = "c"
-path = "src/Codeforces/Div3/702/c.rs"
+path = "src/Codeforces/Div3/697/c.rs"
 [[bin]]
 name = "d"
-path = "src/Codeforces/Div3/702/d.rs"
+path = "src/Codeforces/Div3/697/d.rs"
 [[bin]]
 name = "e"
-path = "src/Codeforces/Div3/702/e.rs"
+path = "src/Codeforces/Div3/697/e.rs"
 [[bin]]
 name = "f"
-path = "src/Codeforces/Div3/702/f.rs"
+path = "src/Codeforces/Div3/697/f.rs"
 [[bin]]
 name = "g"
-path = "src/Codeforces/Div3/702/g.rs"
+path = "src/Codeforces/Div3/697/g.rs"
