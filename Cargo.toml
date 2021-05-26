@@ -14,22 +14,4 @@ clippy = "0.0.302"
 
 [[bin]]
 name = "a"
-path = "src/Codeforces/Div3/690/a.rs"
-[[bin]]
-name = "b"
-path = "src/Codeforces/Div3/690/b.rs"
-[[bin]]
-name = "c"
-path = "src/Codeforces/Div3/690/c.rs"
-[[bin]]
-name = "d"
-path = "src/Codeforces/Div3/690/d.rs"
-[[bin]]
-name = "e"
-path = "src/Codeforces/Div3/690/e.rs"
-[[bin]]
-name = "f"
-path = "src/Codeforces/Div3/690/f.rs"
-[[bin]]
-name = "g"
-path = "src/Codeforces/Div3/693/g.rs"
+path = "src/AtCoder Heuristic Contest/AHC002/a.rs"

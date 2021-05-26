@@ -5,24 +5,26 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
     </configurations>
   </component>
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AtCoder Beginner Contest/ABC135/f.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20210304/a.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20210304/b.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20210304/c.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20210304/d.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20210304/e.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VirtualContest/20210304/f.rs" afterDir="false" />
+    <list default="true" id="67eb9c25-1eca-4584-94b8-0947ea406332" name="Default Changelist" comment="solve problems">
+      <change afterPath="$PROJECT_DIR$/src/AtCoder Heuristic Contest/AHC002/a.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codeforces/Div3/686/a.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codeforces/Div3/686/b.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codeforces/Div3/686/c.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codeforces/Div3/686/d.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codeforces/Div3/686/e.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Codeforces/Div3/686/f.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Google Code Jam/2021/Round 1A/a.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Google Code Jam/2021/Round 1A/b.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Google Code Jam/2021/Round 1A/c.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Rust File" />
         <option value="ProconRust" />
+        <option value="Rust File" />
       </list>
     </option>
   </component>
@@ -54,8 +56,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -66,11 +70,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Cargo.Run a">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Run a" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package programming_contest_rust --bin a" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -101,8 +100,23 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run e" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package programming_contest_rust --bin e" />
+    <configuration name="Run c" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package programming_contest_rust --bin c" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run d" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package programming_contest_rust --bin d" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -131,28 +145,18 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run programming_contest_rust" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package programming_contest_rust --bin programming_contest_rust" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Cargo.Run a" />
+        <item itemvalue="Cargo.Run c" />
         <item itemvalue="Cargo.Run b" />
         <item itemvalue="Cargo.Run f" />
-        <item itemvalue="Cargo.Run e" />
-        <item itemvalue="Cargo.Run programming_contest_rust" />
+        <item itemvalue="Cargo.Run d" />
       </list>
     </recent_temporary>
   </component>
@@ -241,49 +245,27 @@
       <workItem from="1614008159431" duration="29661000" />
       <workItem from="1614344095748" duration="4680000" />
       <workItem from="1614605914415" duration="13236000" />
-      <workItem from="1614778853840" duration="7465000" />
-    </task>
-    <task id="LOCAL-00035" summary="solve problems">
-      <created>1602509645294</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1602509645294</updated>
-    </task>
-    <task id="LOCAL-00036" summary="solve problems">
-      <created>1602596807520</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1602596807520</updated>
-    </task>
-    <task id="LOCAL-00037" summary="solve problems">
-      <created>1602766429588</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1602766429588</updated>
-    </task>
-    <task id="LOCAL-00038" summary="solve problems">
-      <created>1603209509099</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1603209509099</updated>
-    </task>
-    <task id="LOCAL-00039" summary="solve problems and lower_bound lib">
-      <created>1603808409420</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1603808409420</updated>
-    </task>
-    <task id="LOCAL-00040" summary="solve problems">
-      <created>1603888181789</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1603888181789</updated>
+      <workItem from="1614778853840" duration="14678000" />
+      <workItem from="1615006557875" duration="3000" />
+      <workItem from="1615011846993" duration="1424000" />
+      <workItem from="1615029558857" duration="94000" />
+      <workItem from="1615046467317" duration="12169000" />
+      <workItem from="1615134289531" duration="1191000" />
+      <workItem from="1615379965723" duration="43197000" />
+      <workItem from="1615655486890" duration="4603000" />
+      <workItem from="1615985420554" duration="2512000" />
+      <workItem from="1616077053359" duration="184000" />
+      <workItem from="1616077647490" duration="20020000" />
+      <workItem from="1616239262126" duration="716000" />
+      <workItem from="1616252861191" duration="4754000" />
+      <workItem from="1616288643958" duration="2981000" />
+      <workItem from="1618015482821" duration="606000" />
+      <workItem from="1618016141124" duration="5383000" />
+      <workItem from="1619344301065" duration="105000" />
+      <workItem from="1619344418129" duration="13607000" />
+      <workItem from="1619614642790" duration="10000" />
+      <workItem from="1620346608740" duration="430000" />
+      <workItem from="1620474022457" duration="55000" />
     </task>
     <task id="LOCAL-00041" summary="solve problems">
       <created>1604765400659</created>
@@ -586,7 +568,49 @@
       <option name="project" value="LOCAL" />
       <updated>1614778434009</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="solve problems">
+      <created>1614867951673</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1614867951673</updated>
+    </task>
+    <task id="LOCAL-00085" summary="solve problems">
+      <created>1615985445992</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1615985445992</updated>
+    </task>
+    <task id="LOCAL-00086" summary="solve problems">
+      <created>1616157369217</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1616157369217</updated>
+    </task>
+    <task id="LOCAL-00087" summary="solve problems">
+      <created>1616165946369</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1616165946369</updated>
+    </task>
+    <task id="LOCAL-00088" summary="solve problems">
+      <created>1616253360089</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1616253360089</updated>
+    </task>
+    <task id="LOCAL-00089" summary="solve problems">
+      <created>1616289884405</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1616289884405</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,84 +636,10 @@
     <MESSAGE value="rename file" />
     <MESSAGE value="add union_find lib" />
     <MESSAGE value="reffactor test" />
-    <MESSAGE value="solve problems" />
     <MESSAGE value="solve problems and add mod_combination lib" />
     <MESSAGE value="add rolling hash lib" />
-    <option name="LAST_COMMIT_MESSAGE" value="add rolling hash lib" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="266" y="45" key="CommitChangelistDialog2" timestamp="1614778433829">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="266" y="45" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1614778433829" />
-    <state x="140" y="98" key="DiffContextDialog" timestamp="1614092593827">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="140" y="98" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1614092593827" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1614867783430">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614867783430" />
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1608369443679" />
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1614347265256" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1614867783429">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1614867783429" />
-    <state width="1398" height="304" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1608369443678" />
-    <state width="1398" height="304" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1614347265256" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1614867783428">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1614867783428" />
-    <state width="1398" height="304" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1608369443677" />
-    <state width="1398" height="304" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1614347265255" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1614867783429">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1614867783429" />
-    <state width="1398" height="304" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1608369443678" />
-    <state width="1398" height="304" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1614347265256" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1614861766910">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614861766910" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.23.1440.808@0.23.1440.808" timestamp="1608369443680" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.25.1440.804@0.25.1440.804" timestamp="1614347265153" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1614861766908">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1614861766908" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.23.1440.808@0.23.1440.808" timestamp="1608369443679" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.25.1440.804@0.25.1440.804" timestamp="1614347265151" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1614861766908">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1614861766908" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.23.1440.808@0.23.1440.808" timestamp="1608369443679" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.25.1440.804@0.25.1440.804" timestamp="1614347265151" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1614861766909">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1614861766909" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.23.1440.808@0.23.1440.808" timestamp="1608369443680" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.25.1440.804@0.25.1440.804" timestamp="1614347265152" />
-    <state x="229" y="86" key="SettingsEditor" timestamp="1614094307322">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="229" y="86" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1614094307322" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1614697800196">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1614697800196" />
-    <state x="385" y="210" width="670" height="675" key="run.anything.popup" timestamp="1614696699195">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="210" width="670" height="675" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1614696699195" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1614612960595">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1614612960595" />
+    <MESSAGE value="solve problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="solve problems" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -894,7 +844,17 @@
           <line>16</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/Codeforces/Div3/702/d.rs</url>
+          <line>3</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CargoCommandRunConfiguration">
+        <watch expression="tmp.buffer.len()" language="Rust" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
